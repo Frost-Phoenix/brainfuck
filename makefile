@@ -55,7 +55,7 @@ release: CFLAGS += $(RELEASE_FLAGS)
 release: clean $(BIN_DIR)/$(TARGET)
 
 run: $(BIN_DIR)/$(TARGET)
-	./$(BIN_DIR)/$(TARGET)
+	$(BIN_DIR)/$(TARGET)
 
 clean:
 	rm -rf $(BIN_DIR)
